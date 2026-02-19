@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="博客变现助手 - 一站式博客变现助手，包含文本处理、SEO优化、AdSense配置等功能">
-  <meta name="keywords" content="博客,变现,AdSense,SEO,工具,字数统计,标题优化">
-  <title>博客变现助手 | Blog Monetization Helper</title>
-  
-  <meta property="og:title" content="博客变现助手">
-  <meta property="og:description" content="一站式博客变现助手，助力内容创作者实现 Google AdSense 变现">
+  <meta name="description" content="Blog Monetization Helper - All-in-one platform for content creators to monetize their blogs with Google AdSense. Features text processing, SEO optimization, and AdSense configuration tools.">
+  <meta name="keywords" content="blog, monetization, AdSense, SEO, tools, word count, title optimization">
+  <title>Blog Monetization Helper</title>
+
+  <meta property="og:title" content="Blog Monetization Helper">
+  <meta property="og:description" content="All-in-one platform for content creators to monetize their blogs with Google AdSense.">
   <meta property="og:type" content="website">
-  
+
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="博客变现助手">
-  
+  <meta name="twitter:title" content="Blog Monetization Helper">
+
   <!-- Google Analytics 4 -->
-  <!-- 将 G-XXXXXXXXXX 替换为你的测量 ID -->
+  <!-- Replace G-XXXXXXXXXX with your Measurement ID -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -23,14 +23,14 @@
     gtag('js', new Date());
     gtag('config', 'G-XXXXXXXXXX');
   </script>
-  
+
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-    
+
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -39,7 +39,7 @@
       line-height: 1.6;
       padding: 20px;
     }
-    
+
     .container {
       max-width: 1400px;
       margin: 0 auto;
@@ -48,7 +48,7 @@
       border-radius: 16px;
       box-shadow: 0 25px 50px rgba(0,0,0,0.1);
     }
-    
+
     .nav {
       display: flex;
       justify-content: space-between;
@@ -57,41 +57,41 @@
       border-bottom: 2px solid #e5e7eb;
       margin-bottom: 30px;
     }
-    
+
     .nav-logo {
       font-size: 1.8em;
       font-weight: bold;
       color: #667eea;
     }
-    
+
     .nav-links {
       display: flex;
       gap: 40px;
     }
-    
+
     .nav-links a {
       color: #666;
       text-decoration: none;
       font-size: 1.1em;
       transition: color 0.3s;
     }
-    
+
     .nav-links a:hover {
       color: #667eea;
     }
-    
+
     .hero {
       text-align: center;
       padding: 80px 0;
       margin-bottom: 60px;
     }
-    
+
     .hero h1 {
       font-size: 3.5em;
       margin-bottom: 20px;
       color: #333;
     }
-    
+
     .hero p {
       font-size: 1.3em;
       color: #666;
@@ -99,7 +99,7 @@
       margin: 0 auto;
       line-height: 1.8;
     }
-    
+
     .hero-cta {
       display: inline-block;
       background: #667eea;
@@ -111,20 +111,20 @@
       margin-top: 30px;
       transition: all 0.3s;
     }
-    
+
     .hero-cta:hover {
       background: #764ba2;
       transform: translateY(-3px);
       box-shadow: 0 8px 20px rgba(102,126,234,0.3);
     }
-    
+
     .tools-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
       gap: 30px;
       margin-bottom: 60px;
     }
-    
+
     .tool-card {
       background: #f8f9fa;
       border: 1px solid #e5e7eb;
@@ -132,37 +132,37 @@
       padding: 30px;
       transition: all 0.3s;
     }
-    
+
     .tool-card:hover {
       transform: translateY(-8px);
       box-shadow: 0 15px 40px rgba(102,126,234,0.2);
     }
-    
+
     .tool-icon {
       font-size: 2.5em;
       margin-bottom: 15px;
     }
-    
+
     .tool-title {
       font-size: 1.4em;
       font-weight: bold;
       margin-bottom: 15px;
       color: #333;
     }
-    
+
     .tool-desc {
       color: #666;
       margin-bottom: 20px;
       line-height: 1.6;
     }
-    
+
     .tool-area {
       background: white;
       padding: 20px;
       border-radius: 8px;
       border: 1px solid #e5e7eb;
     }
-    
+
     textarea, input[type="text"] {
       width: 100%;
       min-height: 150px;
@@ -175,11 +175,11 @@
       margin-bottom: 15px;
       box-sizing: border-box;
     }
-    
+
     input[type="text"] {
       min-height: auto;
     }
-    
+
     .button {
       background: #667eea;
       color: white;
@@ -191,22 +191,22 @@
       transition: all 0.3s;
       width: 100%;
     }
-    
+
     .button:hover {
       background: #764ba2;
     }
-    
+
     .secondary-button {
       background: white;
       color: #667eea;
       border: 2px solid #667eea;
       width: 48%;
     }
-    
+
     .secondary-button:hover {
       background: #f8f9fa;
     }
-    
+
     .result-area {
       background: white;
       padding: 20px;
@@ -214,45 +214,45 @@
       border: 1px solid #e5e7eb;
       margin-top: 20px;
     }
-    
+
     .stats-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 15px;
     }
-    
+
     .stat-item {
       background: #f8f9fa;
       padding: 15px;
       border-radius: 6px;
       text-align: center;
     }
-    
+
     .stat-label {
       font-size: 0.9em;
       color: #666;
       margin-bottom: 5px;
     }
-    
+
     .stat-value {
       font-size: 1.8em;
       font-weight: bold;
       color: #333;
     }
-    
+
     .section-title {
       font-size: 1.8em;
       font-weight: bold;
       margin-bottom: 30px;
       color: #333;
     }
-    
+
     .resources-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 20px;
     }
-    
+
     .resource-card {
       background: white;
       padding: 20px;
@@ -260,29 +260,29 @@
       border: 1px solid #e5e7eb;
       transition: all 0.3s;
     }
-    
+
     .resource-card:hover {
       border-color: #667eea;
       transform: translateY(-4px);
     }
-    
+
     .resource-title {
       font-weight: bold;
       margin-bottom: 10px;
       color: #333;
     }
-    
+
     .resource-desc {
       color: #666;
       font-size: 0.95em;
     }
-    
+
     .article-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
       gap: 25px;
     }
-    
+
     .article-card {
       background: white;
       padding: 25px;
@@ -291,13 +291,13 @@
       transition: all 0.3s;
       cursor: pointer;
     }
-    
+
     .article-card:hover {
       border-color: #667eea;
       transform: translateY(-5px);
       box-shadow: 0 10px 30px rgba(102,126,234,0.15);
     }
-    
+
     .article-tag {
       display: inline-block;
       background: #667eea;
@@ -307,7 +307,7 @@
       font-size: 0.8em;
       margin-bottom: 15px;
     }
-    
+
     .article-title {
       font-size: 1.3em;
       font-weight: bold;
@@ -315,19 +315,19 @@
       color: #333;
       line-height: 1.4;
     }
-    
+
     .article-excerpt {
       color: #666;
       font-size: 0.95em;
       margin-bottom: 15px;
       line-height: 1.6;
     }
-    
+
     .article-meta {
       color: #999;
       font-size: 0.85em;
     }
-    
+
     .ad-placeholder {
       background: linear-gradient(135deg, #e5e7eb 0%, #d4d8dd 100%);
       border-radius: 8px;
@@ -340,7 +340,7 @@
       align-items: center;
       justify-content: center;
     }
-    
+
     .footer {
       text-align: center;
       color: #999;
@@ -348,30 +348,30 @@
       border-top: 1px solid #e5e7eb;
       margin-top: 80px;
     }
-    
+
     @media (max-width: 768px) {
       .tools-grid {
         grid-template-columns: 1fr;
       }
-      
+
       .resources-grid {
         grid-template-columns: 1fr;
       }
-      
+
       .nav-links {
         display: none;
       }
     }
-    
+
     @media (max-width: 480px) {
       .container {
         padding: 20px 15px;
       }
-      
+
       .hero h1 {
         font-size: 2.2em;
       }
-      
+
       .hero p {
         font-size: 1em;
       }
@@ -380,50 +380,82 @@
 </head>
 <body>
   <nav class="nav">
-    <div class="nav-logo">博客变现助手</div>
+    <div class="nav-logo">Blog Monetization Helper</div>
     <div class="nav-links">
-      <a href="#articles">文章</a>
-      <a href="#tools">工具</a>
+      <a href="#articles">Articles</a>
+      <a href="#tools">Tools</a>
       <a href="#ads">AdSense</a>
-      <a href="#resources">资源</a>
+      <a href="#resources">Resources</a>
     </div>
   </nav>
 
   <div class="container">
     <section class="hero">
-      <h1>博客变现助手</h1>
-      <p>一站式工具平台，助力内容创作者实现 Google AdSense 变现</p>
-      <a href="#tools" class="hero-cta">开始使用工具 →</a>
+      <h1>Blog Monetization Helper</h1>
+      <p>All-in-one platform for content creators to monetize their blogs with Google AdSense</p>
+      <a href="#tools" class="hero-cta">Start Using Tools →</a>
+    </section>
+
+    <section id="articles">
+      <div class="section-title">📚 Latest Articles</div>
+      <div class="article-grid">
+        <div class="article-card" onclick="window.location.href='article-001.html'">
+          <span class="article-tag">Blog Monetization</span>
+          <h3 class="article-title">How to Start Monetizing Your Blog with Tools</h3>
+          <p class="article-excerpt">
+            Detailed guide on using Blog Monetization Helper tools to monetize your blog with Google AdSense. Includes SEO optimization, text processing, and ad configuration.
+          </p>
+          <div class="article-meta">Published: 2026-02-19 | Read time: 5 minutes</div>
+        </div>
+
+        <div class="article-card" onclick="window.location.href='article-002.html'">
+          <span class="article-tag">Revenue Optimization</span>
+          <h3 class="article-title">10 Proven Tips to Increase AdSense Revenue</h3>
+          <p class="article-excerpt">
+            Learn 10 proven tips to boost your AdSense earnings, including ad placement optimization, CPM improvement, RPM growth, and traffic acquisition strategies. Double your revenue!
+          </p>
+          <div class="article-meta">Published: 2026-02-19 | Read time: 8 minutes</div>
+        </div>
+
+        <div class="article-card" onclick="window.location.href='article-003.html'">
+          <span class="article-tag">Policy Guide</span>
+          <h3 class="article-title">Complete AdSense Policy Guide - Avoid Account Bans</h3>
+          <p class="article-excerpt">
+            Comprehensive guide to Google AdSense policies covering content policy, ad policy, and traffic policy. Avoid account bans and ensure long-term stable income.
+          </p>
+          <div class="article-meta">Published: 2026-02-19 | Read time: 10 minutes</div>
+        </div>
+      </div>
     </section>
 
     <section id="tools">
       <div class="tools-grid">
         <div class="tool-card">
           <div class="tool-icon">📝</div>
-          <h3 class="tool-title">文本处理</h3>
+          <h3 class="tool-title">Text Processing</h3>
           <p class="tool-desc">
-            字数统计、标题生成、关键词提取
+            Word count, title generation, keyword extraction
           </p>
           <div class="tool-area">
-            <textarea id="input-text" placeholder="在此输入博客内容..."></textarea>
+            <textarea id="input-text" placeholder="Enter your blog content here..."></textarea>
             <div style="display: flex; gap: 10px; margin-top: 15px;">
-              <button class="button" onclick="processText()">处理文本</button>
-              <button class="secondary-button" onclick="clearHistory()">清空历史</button>
+              <button class="button" onclick="processText()">Process Text</button>
+              <button class="secondary-button" onclick="clearHistory()">Clear History</button>
             </div>
           </div>
           <div class="result-area">
-            <h4>统计结果</h4>
+            <h4>Statistics</h4>
             <div class="stats-grid">
               <div class="stat-item">
-                <div class="stat-label">字符数</div>
+                <div class="stat-label">Character Count</div>
                 <div class="stat-value" id="char-count">0</div>
               </div>
               <div class="stat-item">
-                <div class="stat-label">中文字数</div>
+                <div class="stat-label">Chinese Words</div>
                 <div class="stat-value" id="word-count">0</div>
               </div>
               <div class="stat-item">
-                <div class="stat-label">英文单词数</div>
+                <div class="stat-label">English Words</div>
                 <div class="stat-value" id="english-count">0</div>
               </div>
             </div>
@@ -432,25 +464,25 @@
 
         <div class="tool-card">
           <div class="tool-icon">🔍</div>
-          <h3 class="tool-title">SEO 优化</h3>
+          <h3 class="tool-title">SEO Optimization</h3>
           <p class="tool-desc">
-            标题优化、描述优化、Meta 标签生成、关键词提取
+            Title optimization, description optimization, Meta tag generation, keyword extraction
           </p>
           <div class="tool-area">
-            <input type="text" id="seo-title-input" placeholder="输入文章标题..." />
-            <button class="button" onclick="generateSEO()" style="margin-top: 10px;">生成 SEO 建议</button>
+            <input type="text" id="seo-title-input" placeholder="Enter article title..." />
+            <button class="button" onclick="generateSEO()" style="margin-top: 10px;">Generate SEO Suggestions</button>
           </div>
           <div class="result-area">
-            <h4>SEO 优化结果</h4>
+            <h4>SEO Results</h4>
             <div id="seo-results"></div>
           </div>
         </div>
 
         <div class="tool-card">
           <div class="tool-icon">📋</div>
-          <h3 class="tool-title">格式化预览</h3>
+          <h3 class="tool-title">Format Preview</h3>
           <p class="tool-desc">
-            Markdown 预览、HTML 预览、一键复制
+            Markdown preview, HTML preview, one-click copy
           </p>
           <div class="tool-area">
             <div style="display: flex; gap: 10px; margin-bottom: 15px;">
@@ -458,7 +490,7 @@
               <button class="secondary-button" onclick="formatHTML()">HTML</button>
             </div>
             <div class="result-area" style="min-height: 100px;">
-              <h4>预览</h4>
+              <h4>Preview</h4>
               <div id="format-preview"></div>
             </div>
           </div>
@@ -467,104 +499,72 @@
     </section>
 
     <section id="ads">
-      <div class="section-title">AdSense 配置</div>
+      <div class="section-title">AdSense Configuration</div>
       <div class="tool-card">
-        <h3 style="margin-bottom: 15px; color: #333;">广告代码设置</h3>
+        <h3 style="margin-bottom: 15px; color: #333;">Ad Code Settings</h3>
         <div class="tool-area">
-          <label style="display: block; margin-bottom: 10px; font-weight: bold;">Google AdSense 代码：</label>
-          <textarea id="adsense-code" placeholder="粘贴你的 AdSense 广告代码..." style="width: 100%; min-height: 100px;"></textarea>
+          <label style="display: block; margin-bottom: 10px; font-weight: bold;">Google AdSense Code:</label>
+          <textarea id="adsense-code" placeholder="Paste your AdSense ad code here..." style="width: 100%; min-height: 100px;"></textarea>
           <div style="display: flex; gap: 10px; margin-top: 15px;">
-            <button class="button" onclick="saveAdCode()">保存代码</button>
-            <button class="secondary-button" onclick="previewAdCode()">预览效果</button>
+            <button class="button" onclick="saveAdCode()">Save Code</button>
+            <button class="secondary-button" onclick="previewAdCode()">Preview Effect</button>
           </div>
         </div>
         <div class="ad-placeholder" id="ad-top">
-          Google AdSense 广告位（顶部横幅）
+          Google AdSense Ad Slot (Top Banner)
         </div>
         <div style="margin-top: 30px; text-align: center;">
           <a href="https://www.google.com/adsense" target="_blank" style="display: inline-block; background: #667eea; color: white; padding: 12px 24px; border-radius: 6px; text-decoration: none;">
-            申请 Google AdSense →
+            Apply for Google AdSense →
           </a>
         </div>
       </div>
     </section>
 
-    <section id="articles">
-      <div class="section-title">📚 最新文章</div>
-      <div class="article-grid">
-        <div class="article-card" onclick="window.location.href='article-001.html'">
-          <span class="article-tag">博客变现</span>
-          <h3 class="article-title">如何使用博客变现工具开始赚钱</h3>
-          <p class="article-excerpt">
-            详细介绍如何使用博客变现助手工具，通过 Google AdSense 实现博客变现。包含 SEO 优化、文本处理、广告配置等完整指南。
-          </p>
-          <div class="article-meta">发布日期: 2026-02-19 | 阅读时间: 5 分钟</div>
-        </div>
-
-        <div class="article-card" onclick="window.location.href='article-002.html'">
-          <span class="article-tag">收益优化</span>
-          <h3 class="article-title">10 个提高博客 AdSense 收益的技巧</h3>
-          <p class="article-excerpt">
-            学习 10 个经过验证的技巧，包括广告位置优化、CPM 提升、RPM 增长和流量获取策略。让你的 AdSense 收入翻倍！
-          </p>
-          <div class="article-meta">发布日期: 2026-02-19 | 阅读时间: 8 分钟</div>
-        </div>
-
-        <div class="article-card" onclick="window.location.href='article-003.html'">
-          <span class="article-tag">政策指南</span>
-          <h3 class="article-title">AdSense 政策完整指南 - 避免账号被封禁</h3>
-          <p class="article-excerpt">
-            Google AdSense 政策完整指南，详细了解内容政策、广告政策、流量政策等。避免账号被封禁，确保长期稳定收入。
-          </p>
-          <div class="article-meta">发布日期: 2026-02-19 | 阅读时间: 10 分钟</div>
-        </div>
-      </div>
-    </section>
-
     <section id="resources">
-      <div class="section-title">博客变现资源</div>
+      <div class="section-title">Blog Monetization Resources</div>
       <div class="resources-grid">
         <div class="resource-card">
-          <h4 class="resource-title">AdSense 申请指南</h4>
+          <h4 class="resource-title">AdSense Application Guide</h4>
           <p class="resource-desc">
-            完整的 AdSense 申请流程和注意事项
+            Complete AdSense application process and注意事项
           </p>
         </div>
         <div class="resource-card">
-          <h4 class="resource-title">博客优化技巧</h4>
+          <h4 class="resource-title">Blog Optimization Tips</h4>
           <p class="resource-desc">
-            提升页面质量和用户体验的方法
+            Methods to improve page quality and user experience
           </p>
         </div>
         <div class="resource-card">
-          <h4 class="resource-title">SEO 优化策略</h4>
+          <h4 class="resource-title">SEO Optimization Strategy</h4>
           <p class="resource-desc">
-            提升搜索引擎排名的关键词策略
+            Keyword strategies to improve search engine rankings
           </p>
         </div>
         <div class="resource-card">
-          <h4 class="resource-title">变现策略建议</h4>
+          <h4 class="resource-title">Monetization Strategy</h4>
           <p class="resource-desc">
-            CPM/RPM 优化和收益最大化方法
+            CPM/RPM optimization and revenue maximization
           </p>
         </div>
         <div class="resource-card">
-          <h4 class="resource-title">联盟营销平台</h4>
+          <h4 class="resource-title">Affiliate Marketing Platforms</h4>
           <p class="resource-desc">
-            补充变现的其他广告平台
+            Other ad platforms for supplementary monetization
           </p>
         </div>
         <div class="resource-card">
-          <h4 class="resource-title">成功案例展示</h4>
+          <h4 class="resource-title">Success Case Studies</h4>
           <p class="resource-desc">
-            优秀博客变现案例分析
+            Excellent blog monetization case studies
           </p>
         </div>
       </div>
     </section>
 
     <footer class="footer">
-      <p>&copy; 2025 博客变现助手. 由 Crush AI 开发 · 智谱 GLM-5</p>
+      <p>&copy; 2026 Blog Monetization Helper. Developed with Crush AI · Zhipu GLM-5</p>
     </footer>
   </div>
 
@@ -586,7 +586,7 @@
       const charCount = text.length;
       const wordCount = text.split(/\s+/).filter(w => w.length > 0).length;
       const englishCount = text.split(/\s+/).filter(w => /[a-zA-Z]/.test(w)).length;
-      
+
       document.getElementById('char-count').textContent = charCount;
       document.getElementById('word-count').textContent = wordCount;
       document.getElementById('english-count').textContent = englishCount;
@@ -602,35 +602,35 @@
     function generateSEO() {
       const title = document.getElementById('seo-title-input').value;
       if (!title.trim()) {
-        alert('请输入标题');
+        alert('Please enter a title');
         return;
       }
 
       const seoResults = document.getElementById('seo-results');
       seoResults.innerHTML = `
         <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin-bottom: 15px;">
-          <h5 style="color: #333; margin-bottom: 10px;">标题优化建议</h5>
-          <p style="color: #666; margin-bottom: 10px;">${title.substring(0, 50)}...（50-60 字符）</p>
-          <p style="color: #666;">建议标题：${title.substring(0, 50)} | 博客变现助手</p>
+          <h5 style="color: #333; margin-bottom: 10px;">Title Optimization Suggestions</h5>
+          <p style="color: #666; margin-bottom: 10px;">${title.substring(0, 50)}... (50-60 characters)</p>
+          <p style="color: #666;">Suggested title: ${title.substring(0, 50)} | Blog Monetization Helper</p>
         </div>
-        
+
         <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin-bottom: 15px;">
-          <h5 style="color: #333; margin-bottom: 10px;">描述优化建议</h5>
-          <p style="color: #666; margin-bottom: 10px;">建议描述：通过使用博客变现助手工具，你可以轻松优化博客的 Meta 描述和关键词...</p>
-          <p style="color: #666;">长度：130-160 字符（推荐）</p>
+          <h5 style="color: #333; margin-bottom: 10px;">Description Optimization Suggestions</h5>
+          <p style="color: #666; margin-bottom: 10px;">Suggested description: By using Blog Monetization Helper tools, you can easily optimize your blog's Meta description and keywords...</p>
+          <p style="color: #666;">Length: 130-160 characters (recommended)</p>
         </div>
-        
+
         <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin-bottom: 15px;">
-          <h5 style="color: #333; margin-bottom: 10px;">关键词提取（自动）</h5>
-          <p style="color: #666;">核心关键词：博客,变现,AdSense,工具,SEO</p>
-          <p style="color: #666;">长尾关键词：博客变现,AdSense 申请,SEO 优化</p>
+          <h5 style="color: #333; margin-bottom: 10px;">Keyword Extraction (Auto)</h5>
+          <p style="color: #666;">Core keywords: blog, monetization, AdSense, tools, SEO</p>
+          <p style="color: #666;">Long-tail keywords: blog monetization, AdSense application, SEO optimization</p>
         </div>
-        
+
         <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin-bottom: 15px;">
-          <h5 style="color: #333; margin-bottom: 10px;">Meta 标签</h5>
+          <h5 style="color: #333; margin-bottom: 10px;">Meta Tags</h5>
           <code style="display: block; background: #f0f0f0; padding: 10px; border-radius: 4px; margin-bottom: 10px; color: #333;">
-&lt;meta name="description" content="${title.substring(0, 50)}... 通过使用博客变现助手工具轻松实现博客变现"&gt;
-&lt;meta name="keywords" content="博客,变现,AdSense,SEO,工具"&gt;
+&lt;meta name="description" content="${title.substring(0, 50)}... Using Blog Monetization Helper tools to easily achieve blog monetization"&gt;
+&lt;meta name="keywords" content="blog, monetization, AdSense, SEO, tools"&gt;
           </code>
         </div>
       `;
@@ -659,7 +659,7 @@
       const code = document.getElementById('adsense-code').value;
       if (code.trim()) {
         Storage.set('adsenseCode', code);
-        alert('AdSense 代码已保存！');
+        alert('AdSense code saved successfully!');
       }
     }
 
