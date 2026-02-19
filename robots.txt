@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://katherine1919.github.io/Blog/sitemap.xml
