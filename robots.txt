@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://katherine1919.github.io/Blog/sitemap.xml
+Sitemap: https://blog-monetize-helper.vercel.app/sitemap.xml
