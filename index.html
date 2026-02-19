@@ -267,6 +267,57 @@
       font-size: 0.95em;
     }
     
+    .article-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 25px;
+    }
+    
+    .article-card {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      border: 1px solid #e5e7eb;
+      transition: all 0.3s;
+      cursor: pointer;
+    }
+    
+    .article-card:hover {
+      border-color: #667eea;
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(102,126,234,0.15);
+    }
+    
+    .article-tag {
+      display: inline-block;
+      background: #667eea;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.8em;
+      margin-bottom: 15px;
+    }
+    
+    .article-title {
+      font-size: 1.3em;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #333;
+      line-height: 1.4;
+    }
+    
+    .article-excerpt {
+      color: #666;
+      font-size: 0.95em;
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+    
+    .article-meta {
+      color: #999;
+      font-size: 0.85em;
+    }
+    
     .ad-placeholder {
       background: linear-gradient(135deg, #e5e7eb 0%, #d4d8dd 100%);
       border-radius: 8px;
@@ -321,6 +372,7 @@
   <nav class="nav">
     <div class="nav-logo">博客变现助手</div>
     <div class="nav-links">
+      <a href="#articles">文章</a>
       <a href="#tools">工具</a>
       <a href="#ads">AdSense</a>
       <a href="#resources">资源</a>
@@ -423,6 +475,29 @@
           <a href="https://www.google.com/adsense" target="_blank" style="display: inline-block; background: #667eea; color: white; padding: 12px 24px; border-radius: 6px; text-decoration: none;">
             申请 Google AdSense →
           </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="articles">
+      <div class="section-title">📚 最新文章</div>
+      <div class="article-grid">
+        <div class="article-card" onclick="window.location.href='article-001.html'">
+          <span class="article-tag">博客变现</span>
+          <h3 class="article-title">如何使用博客变现工具开始赚钱</h3>
+          <p class="article-excerpt">
+            详细介绍如何使用博客变现助手工具，通过 Google AdSense 实现博客变现。包含 SEO 优化、文本处理、广告配置等完整指南。
+          </p>
+          <div class="article-meta">发布日期: 2026-02-19 | 阅读时间: 5 分钟</div>
+        </div>
+
+        <div class="article-card" onclick="window.location.href='article-002.html'">
+          <span class="article-tag">收益优化</span>
+          <h3 class="article-title">10 个提高博客 AdSense 收益的技巧</h3>
+          <p class="article-excerpt">
+            学习 10 个经过验证的技巧，包括广告位置优化、CPM 提升、RPM 增长和流量获取策略。让你的 AdSense 收入翻倍！
+          </p>
+          <div class="article-meta">发布日期: 2026-02-19 | 阅读时间: 8 分钟</div>
         </div>
       </div>
     </section>
